@@ -1,0 +1,7 @@
+NUM : 14 
+
+Var_initialization := type : int , Id : j ,SEMI 
+ID : a 
+NUM : 2 
+ARITH_OP : PLUS(+) ,Id : i, OP : = ,
+func_return_type  : int, function_defined : main

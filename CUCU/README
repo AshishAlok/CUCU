@@ -1,0 +1,74 @@
+------------------------------------------------------------
+How to compile and run: -
+
+open the terminal and type:
+
+flex cucu.l
+bison -d cucu.y
+cc lex.yy.c cucu.tab.c -o cucu
+./cucu sample.cu   (the word sample.cu is the input file fed to the compiler)
+-----------------------------------------------------------
+
+Note:-
+
+In all the running of commands ignore warnings.
+
+Lexer.txt will contain the lexemes inferred.
+The lexemes are printed in the order in which they are encountered.
+
+Parser.txt will contain the parsed code.
+The order of printing the parsed code is similar to the grammar's recursion.
+
+You can add comments of type:=
+// single line
+/* multiple
+lines */
+------------------WRONG SYTAX IN SMAPLE--------------------
+
+In case of wrong suntax the parser simply exits the program
+The lexer.txt and Parser.txt contains the information upto which the programme runs correctly
+s
+----------------------------------------------------------
+
+VARIABLES TYPES: -
+
+int  ( definition :=   int  i = expr;)
+char *  ( definition :=   char *var_name = "random_string";)
+
+multiple declaration of variables are not allowed.
+----------------------------------------------------------
+
+----------------------LEXEMES:----------------------------
+variable_name
+{
+}
+(
+)
+int
+char[ ][*]   
+       
+void                       
+return                    
+while                    
+for	                  
+if	                   
+else	               
+true                      
+false                   
+<=
+>=
+<
+>
+==
+!=
+&
+|
++
+-
+*
+/
+\n
+\t
+
+     
+-----------------------------------------------------
